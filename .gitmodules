@@ -1,0 +1,3 @@
+[submodule "submodules/olarm_protocol_y"]
+path = submodules/olarm_protocol_y
+url = git@github.com:OlarmTech/olarm_protocol_y
