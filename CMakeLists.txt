@@ -13,7 +13,7 @@ set(CMAKE_C_STANDARD_REQUIRED ON)
 set(CMAKE_C_EXTENSIONS ON)
 
 # Setup compiler settings for C++
-set(CMAKE_CXX_STANDARD 17)  # or any other C++ standard, e.g., 14, 17, 20
+set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
