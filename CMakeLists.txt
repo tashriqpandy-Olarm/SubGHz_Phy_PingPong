@@ -1,4 +1,5 @@
-cmake_minimum_required(VERSION 3.22)
+cmake_minimum_required(VERSION 3.23)
+project(YourMainProject VERSION 1.0 LANGUAGES C CXX)
 
 #
 # This file is generated only once,
@@ -16,6 +17,7 @@ set(CMAKE_C_EXTENSIONS ON)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Fetch the olarm_protocol_y repository
 include(FetchContent)
 
 FetchContent_Declare(
@@ -24,7 +26,6 @@ FetchContent_Declare(
   GIT_TAG        ULPN-628-Limit-Protocol-Y-Testing-to-only-the-Submodule
 )
 FetchContent_MakeAvailable(olarm_protocol_y)
-
 
 # Define the build type
 if(NOT CMAKE_BUILD_TYPE)
@@ -46,16 +47,6 @@ enable_language(C ASM)
 # Core project settings
 project(${CMAKE_PROJECT_NAME})
 message("Build type: " ${CMAKE_BUILD_TYPE})
-
-# include(FetchContent)
-
-# FetchContent_Declare(
-#   olarm_protocol_y
-#   GIT_REPOSITORY git@github.com:OlarmTech/olarm_protocol_y.git
-#   GIT_TAG        main  # Specify a stable release
-# )
-# FetchContent_MakeAvailable(olarm_protocol_y)
-
 
 # Create an executable object type
 add_executable(${CMAKE_PROJECT_NAME})
@@ -84,8 +75,10 @@ target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
 )
 
 # Add linked libraries
-target_link_libraries(${CMAKE_PROJECT_NAME}
-    stm32cubemx
+# target_link_libraries(${CMAKE_PROJECT_NAME}
+#     stm32cubemx
 
-    # Add user defined libraries
-)
+#     # Add user defined libraries
+# )
+# Link only the ProtocolYMessages target to your project
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE ProtocolYMessages stm32cubemx)

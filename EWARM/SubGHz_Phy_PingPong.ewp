@@ -1136,7 +1136,7 @@
                         <name>$PROJ_DIR$/../SubGHz_Phy/App/app_subghz_phy.c</name>
                     </file>
                     <file>
-                        <name>$PROJ_DIR$/../SubGHz_Phy/App/subghz_phy_app.c</name>
+                        <name>$PROJ_DIR$/../SubGHz_Phy/App/subghz_phy_app.cpp</name>
                     </file>
                 </group>
                 <group>

@@ -469,9 +469,9 @@
               <FilePath>../SubGHz_Phy/App/app_subghz_phy.c</FilePath>
             </File>
             <File>
-              <FileName>subghz_phy_app.c</FileName>
+              <FileName>subghz_phy_app.cpp</FileName>
               <FileType>1</FileType>
-              <FilePath>../SubGHz_Phy/App/subghz_phy_app.c</FilePath>
+              <FilePath>../SubGHz_Phy/App/subghz_phy_app.cpp</FilePath>
             </File>
           </Files>
         </Group>

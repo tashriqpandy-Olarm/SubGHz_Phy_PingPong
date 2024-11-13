@@ -1,7 +1,7 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    subghz_phy_app.c
+  * @file    subghz_phy_app.cpp
   * @author  MCD Application Team
   * @brief   Application of the SubGHz_Phy Middleware
   ******************************************************************************
@@ -21,7 +21,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "platform.h"
 #include "sys_app.h"
-#include "subghz_phy_app.h"
+#include "subghz_phy_app.hpp"
 #include "radio.h"
 
 /* USER CODE BEGIN Includes */
@@ -30,6 +30,8 @@
 #include "utilities_def.h"
 #include "app_version.h"
 #include "subghz_phy_version.h"
+#include "ProtocolYMessages.hpp"
+
 /* USER CODE END Includes */
 
 /* External variables ---------------------------------------------------------*/

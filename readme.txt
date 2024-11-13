@@ -73,7 +73,7 @@ Applications, SubGHz_Phy, PingPong, SingleCore
   - SubGHz_Phy_PingPong/Core/Inc/utilities_def.h                                Definitions for modules requiring utilities
   - SubGHz_Phy_PingPong/SubGHz_Phy/App/app_subghz_phy.h                         Header of application of the SubGHz_Phy Middleware
   - SubGHz_Phy_PingPong/SubGHz_Phy/App/app_version.h                            Definition the version of the application
-  - SubGHz_Phy_PingPong/SubGHz_Phy/App/subghz_phy_app.h                         Header of application of the SubGHz_Phy Middleware
+  - SubGHz_Phy_PingPong/SubGHz_Phy/App/subghz_phy_app.hpp                         Header of application of the SubGHz_Phy Middleware
   - SubGHz_Phy_PingPong/SubGHz_Phy/Target/mw_log_conf.h                         Configure (enable/disable) traces
   - SubGHz_Phy_PingPong/SubGHz_Phy/Target/radio_board_if.h                      Header for Radio interface configuration
   - SubGHz_Phy_PingPong/SubGHz_Phy/Target/radio_conf.h                          Header of Radio configuration
@@ -102,7 +102,7 @@ Applications, SubGHz_Phy, PingPong, SingleCore
   - SubGHz_Phy_PingPong/STM32CubeIDE/Application/User/Core/syscalls.c           STM32CubeIDE Minimal System calls file
   - SubGHz_Phy_PingPong/STM32CubeIDE/Application/User/Core/sysmem.c             STM32CubeIDE System Memory calls file
   - SubGHz_Phy_PingPong/SubGHz_Phy/App/app_subghz_phy.c                         Application of the SubGHz_Phy Middleware
-  - SubGHz_Phy_PingPong/SubGHz_Phy/App/subghz_phy_app.c                         Application of the SubGHz_Phy Middleware
+  - SubGHz_Phy_PingPong/SubGHz_Phy/App/subghz_phy_app.cpp                         Application of the SubGHz_Phy Middleware
   - SubGHz_Phy_PingPong/SubGHz_Phy/Target/radio_board_if.c                      This file provides an interface layer between MW and Radio Board
 
 
@@ -166,7 +166,7 @@ In order to make the program work, you must do the following :
   "STM32WL - How to port an existing RF application on Azure ThreadX RTOS"
   is available on https://www.youtube.com/playlist?list=PLnMKNibPkDnE2eaR-ZGM3ZJXadyQLtTpX
   but not sufficient for the complete porting of this example.
-  After following the video instructions the user shall open "subghz_phy_app.c" and manually:
+  After following the video instructions the user shall open "subghz_phy_app.cpp" and manually:
   - delete "stm32_seq.h" inclusion
   - delete the line "UTIL_SEQ_RegTask((1 << CFG_SEQ_Task_SubGHz_Phy_App_Process), UTIL_SEQ_RFU, PingPong_Process);
   - call PingPong_Process(); function within /* USER CODE App_Main_Thread_Entry_Loop */

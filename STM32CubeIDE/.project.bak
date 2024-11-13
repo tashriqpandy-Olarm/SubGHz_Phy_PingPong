@@ -288,9 +288,9 @@
 			<locationURI>PARENT-1-PROJECT_LOC/SubGHz_Phy/App/app_subghz_phy.c</locationURI>
 		</link>
 		<link>
-			<name>Application/User/SubGHz_Phy/App/subghz_phy_app.c</name>
+			<name>Application/User/SubGHz_Phy/App/subghz_phy_app.cpp</name>
 			<type>1</type>
-			<locationURI>PARENT-1-PROJECT_LOC/SubGHz_Phy/App/subghz_phy_app.c</locationURI>
+			<locationURI>PARENT-1-PROJECT_LOC/SubGHz_Phy/App/subghz_phy_app.cpp</locationURI>
 		</link>
 		<link>
 			<name>Application/User/SubGHz_Phy/Target/radio_board_if.c</name>

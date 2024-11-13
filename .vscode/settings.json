@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "subghz_phy_version.h": "c"
+        "subghz_phy_version.h": "c",
+        "protocolymessages.hpp": "c"
     }
 }

@@ -403,8 +403,8 @@
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>../SubGHz_Phy/App/subghz_phy_app.c</PathWithFileName>
-      <FilenameWithoutPath>subghz_phy_app.c</FilenameWithoutPath>
+      <PathWithFileName>../SubGHz_Phy/App/subghz_phy_app.cpp</PathWithFileName>
+      <FilenameWithoutPath>subghz_phy_app.cpp</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

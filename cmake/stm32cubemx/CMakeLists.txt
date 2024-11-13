@@ -47,7 +47,7 @@ target_sources(stm32cubemx INTERFACE
     ../../Core/Src/stm32wlxx_hal_msp.c
     ../../SubGHz_Phy/Target/radio_board_if.c
     ../../SubGHz_Phy/App/app_subghz_phy.c
-    ../../SubGHz_Phy/App/subghz_phy_app.c
+    ../../SubGHz_Phy/App/subghz_phy_app.cpp
     ../../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c
     ../../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.c
     ../../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c
