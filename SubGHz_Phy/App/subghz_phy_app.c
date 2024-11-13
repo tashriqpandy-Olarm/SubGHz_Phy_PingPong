@@ -192,45 +192,22 @@ void SubghzApp_Init(void)
   Radio.SetChannel(RF_FREQUENCY);
 
   /* Radio configuration */
-#if ((USE_MODEM_LORA == 1) && (USE_MODEM_FSK == 0))
-  APP_LOG(TS_OFF, VLEVEL_M, "---------------\n\r");
-  APP_LOG(TS_OFF, VLEVEL_M, "LORA_MODULATION\n\r");
-  APP_LOG(TS_OFF, VLEVEL_M, "LORA_BW=%d kHz\n\r", (1 << LORA_BANDWIDTH) * 125);
-  APP_LOG(TS_OFF, VLEVEL_M, "LORA_SF=%d\n\r", LORA_SPREADING_FACTOR);
+APP_LOG(TS_OFF, VLEVEL_M, "---------------\n\r");
+APP_LOG(TS_OFF, VLEVEL_M, "LORA_MODULATION\n\r");
+APP_LOG(TS_OFF, VLEVEL_M, "LORA_BW=%d kHz\n\r", (1 << LORA_BANDWIDTH) * 125);
+APP_LOG(TS_OFF, VLEVEL_M, "LORA_SF=%d\n\r", LORA_SPREADING_FACTOR);
 
-  Radio.SetTxConfig(MODEM_LORA, TX_OUTPUT_POWER, 0, LORA_BANDWIDTH,
-                    LORA_SPREADING_FACTOR, LORA_CODINGRATE,
-                    LORA_PREAMBLE_LENGTH, LORA_FIX_LENGTH_PAYLOAD_ON,
-                    true, 0, 0, LORA_IQ_INVERSION_ON, TX_TIMEOUT_VALUE);
+Radio.SetTxConfig(MODEM_LORA, TX_OUTPUT_POWER, 0, LORA_BANDWIDTH,
+                  LORA_SPREADING_FACTOR, LORA_CODINGRATE,
+                  LORA_PREAMBLE_LENGTH, LORA_FIX_LENGTH_PAYLOAD_ON,
+                  true, 0, 0, LORA_IQ_INVERSION_ON, TX_TIMEOUT_VALUE);
 
-  Radio.SetRxConfig(MODEM_LORA, LORA_BANDWIDTH, LORA_SPREADING_FACTOR,
-                    LORA_CODINGRATE, 0, LORA_PREAMBLE_LENGTH,
-                    LORA_SYMBOL_TIMEOUT, LORA_FIX_LENGTH_PAYLOAD_ON,
-                    0, true, 0, 0, LORA_IQ_INVERSION_ON, true);
+Radio.SetRxConfig(MODEM_LORA, LORA_BANDWIDTH, LORA_SPREADING_FACTOR,
+                  LORA_CODINGRATE, 0, LORA_PREAMBLE_LENGTH,
+                  LORA_SYMBOL_TIMEOUT, LORA_FIX_LENGTH_PAYLOAD_ON,
+                  0, true, 0, 0, LORA_IQ_INVERSION_ON, true);
 
-  Radio.SetMaxPayloadLength(MODEM_LORA, MAX_APP_BUFFER_SIZE);
-
-#elif ((USE_MODEM_LORA == 0) && (USE_MODEM_FSK == 1))
-  APP_LOG(TS_OFF, VLEVEL_M, "---------------\n\r");
-  APP_LOG(TS_OFF, VLEVEL_M, "FSK_MODULATION\n\r");
-  APP_LOG(TS_OFF, VLEVEL_M, "FSK_BW=%d Hz\n\r", FSK_BANDWIDTH);
-  APP_LOG(TS_OFF, VLEVEL_M, "FSK_DR=%d bits/s\n\r", FSK_DATARATE);
-
-  Radio.SetTxConfig(MODEM_FSK, TX_OUTPUT_POWER, FSK_FDEV, 0,
-                    FSK_DATARATE, 0,
-                    FSK_PREAMBLE_LENGTH, FSK_FIX_LENGTH_PAYLOAD_ON,
-                    true, 0, 0, 0, TX_TIMEOUT_VALUE);
-
-  Radio.SetRxConfig(MODEM_FSK, FSK_BANDWIDTH, FSK_DATARATE,
-                    0, FSK_AFC_BANDWIDTH, FSK_PREAMBLE_LENGTH,
-                    0, FSK_FIX_LENGTH_PAYLOAD_ON, 0, true,
-                    0, 0, false, true);
-
-  Radio.SetMaxPayloadLength(MODEM_FSK, MAX_APP_BUFFER_SIZE);
-
-#else
-#error "Please define a modulation in the subghz_phy_app.h file."
-#endif /* USE_MODEM_LORA | USE_MODEM_FSK */
+Radio.SetMaxPayloadLength(MODEM_LORA, MAX_APP_BUFFER_SIZE);
 
   /*fills tx buffer*/
   memset(BufferTx, 0x0, MAX_APP_BUFFER_SIZE);

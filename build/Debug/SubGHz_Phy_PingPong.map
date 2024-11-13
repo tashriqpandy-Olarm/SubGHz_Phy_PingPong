@@ -8927,7 +8927,7 @@ LOAD /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  .debug_frame   0x00007e9c       0x28 /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-strncmp.o)
  .debug_frame   0x00007ec4       0x28 /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-memcpy-stub.o)
 
-.debug_info     0x00000000    0x2240b
+.debug_info     0x00000000    0x22407
  .debug_info    0x00000000      0x8a2 CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/main.c.obj
  .debug_info    0x000008a2      0x5d5 CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/gpio.c.obj
  .debug_info    0x00000e77      0x642 CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/dma.c.obj
@@ -8943,38 +8943,38 @@ LOAD /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  .debug_info    0x00007777       0xce CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/stm32wlxx_hal_msp.c.obj
  .debug_info    0x00007845      0x288 CMakeFiles/SubGHz_Phy_PingPong.dir/SubGHz_Phy/Target/radio_board_if.c.obj
  .debug_info    0x00007acd       0xe3 CMakeFiles/SubGHz_Phy_PingPong.dir/SubGHz_Phy/App/app_subghz_phy.c.obj
- .debug_info    0x00007bb0     0x166c CMakeFiles/SubGHz_Phy_PingPong.dir/SubGHz_Phy/App/subghz_phy_app.c.obj
- .debug_info    0x0000921c      0x707 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.c.obj
- .debug_info    0x00009923     0x13ef CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
- .debug_info    0x0000ad12      0xf21 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
- .debug_info    0x0000bc33      0x708 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c.obj
- .debug_info    0x0000c33b      0x91a CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_dma.c.obj
- .debug_info    0x0000cc55      0x8e8 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr.c.obj
- .debug_info    0x0000d53d      0xde7 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c.obj
- .debug_info    0x0000e324      0xced CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
- .debug_info    0x0000f011     0x1165 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
- .debug_info    0x00010176      0xee1 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rtc.c.obj
- .debug_info    0x00011057     0x149c CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rtc_ex.c.obj
- .debug_info    0x000124f3     0x138d CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_subghz.c.obj
- .debug_info    0x00013880     0x4a83 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
- .debug_info    0x00018303      0xffa CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
- .debug_info    0x000192fd      0x515 CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/system_stm32wlxx.c.obj
- .debug_info    0x00019812     0x2e4f CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio.c.obj
- .debug_info    0x0001c661      0xc40 CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_fw.c.obj
- .debug_info    0x0001d2a1     0x220a CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c.obj
- .debug_info    0x0001f4ab      0xbe7 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/trace/adv_trace/stm32_adv_trace.c.obj
- .debug_info    0x00020092      0x1bd CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_mem.c.obj
- .debug_info    0x0002024f      0x69f CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_systime.c.obj
- .debug_info    0x000208ee      0x2ea CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_tiny_vsnprintf.c.obj
- .debug_info    0x00020bd8      0x9af CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/sequencer/stm32_seq.c.obj
- .debug_info    0x00021587      0x86c CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/timer/stm32_timer.c.obj
- .debug_info    0x00021df3      0x3b8 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/lpm/tiny_lpm/stm32_lpm.c.obj
- .debug_info    0x000221ab       0x30 CMakeFiles/SubGHz_Phy_PingPong.dir/startup_stm32wl55xx_cm4.s.obj
- .debug_info    0x000221db       0xde /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-strncmp.o)
- .debug_info    0x000222b9      0x121 /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-memcpy-stub.o)
- .debug_info    0x000223da       0x31 /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-strlen.o)
+ .debug_info    0x00007bb0     0x1668 CMakeFiles/SubGHz_Phy_PingPong.dir/SubGHz_Phy/App/subghz_phy_app.c.obj
+ .debug_info    0x00009218      0x707 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.c.obj
+ .debug_info    0x0000991f     0x13ef CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+ .debug_info    0x0000ad0e      0xf21 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
+ .debug_info    0x0000bc2f      0x708 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c.obj
+ .debug_info    0x0000c337      0x91a CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_dma.c.obj
+ .debug_info    0x0000cc51      0x8e8 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr.c.obj
+ .debug_info    0x0000d539      0xde7 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c.obj
+ .debug_info    0x0000e320      0xced CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
+ .debug_info    0x0000f00d     0x1165 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
+ .debug_info    0x00010172      0xee1 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rtc.c.obj
+ .debug_info    0x00011053     0x149c CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rtc_ex.c.obj
+ .debug_info    0x000124ef     0x138d CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_subghz.c.obj
+ .debug_info    0x0001387c     0x4a83 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
+ .debug_info    0x000182ff      0xffa CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
+ .debug_info    0x000192f9      0x515 CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/system_stm32wlxx.c.obj
+ .debug_info    0x0001980e     0x2e4f CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio.c.obj
+ .debug_info    0x0001c65d      0xc40 CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_fw.c.obj
+ .debug_info    0x0001d29d     0x220a CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c.obj
+ .debug_info    0x0001f4a7      0xbe7 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/trace/adv_trace/stm32_adv_trace.c.obj
+ .debug_info    0x0002008e      0x1bd CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_mem.c.obj
+ .debug_info    0x0002024b      0x69f CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_systime.c.obj
+ .debug_info    0x000208ea      0x2ea CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_tiny_vsnprintf.c.obj
+ .debug_info    0x00020bd4      0x9af CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/sequencer/stm32_seq.c.obj
+ .debug_info    0x00021583      0x86c CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/timer/stm32_timer.c.obj
+ .debug_info    0x00021def      0x3b8 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/lpm/tiny_lpm/stm32_lpm.c.obj
+ .debug_info    0x000221a7       0x30 CMakeFiles/SubGHz_Phy_PingPong.dir/startup_stm32wl55xx_cm4.s.obj
+ .debug_info    0x000221d7       0xde /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-strncmp.o)
+ .debug_info    0x000222b5      0x121 /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_info    0x000223d6       0x31 /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-strlen.o)
 
-.debug_abbrev   0x00000000     0x5eac
+.debug_abbrev   0x00000000     0x5ed6
  .debug_abbrev  0x00000000      0x21b CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/main.c.obj
  .debug_abbrev  0x0000021b      0x19d CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/gpio.c.obj
  .debug_abbrev  0x000003b8      0x156 CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/dma.c.obj
@@ -8990,36 +8990,36 @@ LOAD /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  .debug_abbrev  0x000018eb       0x7e CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/stm32wlxx_hal_msp.c.obj
  .debug_abbrev  0x00001969      0x109 CMakeFiles/SubGHz_Phy_PingPong.dir/SubGHz_Phy/Target/radio_board_if.c.obj
  .debug_abbrev  0x00001a72       0x86 CMakeFiles/SubGHz_Phy_PingPong.dir/SubGHz_Phy/App/app_subghz_phy.c.obj
- .debug_abbrev  0x00001af8      0x2a9 CMakeFiles/SubGHz_Phy_PingPong.dir/SubGHz_Phy/App/subghz_phy_app.c.obj
- .debug_abbrev  0x00001da1      0x21c CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.c.obj
- .debug_abbrev  0x00001fbd      0x32d CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
- .debug_abbrev  0x000022ea      0x2cb CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
- .debug_abbrev  0x000025b5      0x1e9 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c.obj
- .debug_abbrev  0x0000279e      0x22a CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_dma.c.obj
- .debug_abbrev  0x000029c8      0x209 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr.c.obj
- .debug_abbrev  0x00002bd1      0x302 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c.obj
- .debug_abbrev  0x00002ed3      0x2e8 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
- .debug_abbrev  0x000031bb      0x344 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
- .debug_abbrev  0x000034ff      0x229 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rtc.c.obj
- .debug_abbrev  0x00003728      0x24a CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rtc_ex.c.obj
- .debug_abbrev  0x00003972      0x299 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_subghz.c.obj
- .debug_abbrev  0x00003c0b      0x352 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
- .debug_abbrev  0x00003f5d      0x2d2 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
- .debug_abbrev  0x0000422f      0x13e CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/system_stm32wlxx.c.obj
- .debug_abbrev  0x0000436d      0x3d6 CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio.c.obj
- .debug_abbrev  0x00004743      0x207 CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_fw.c.obj
- .debug_abbrev  0x0000494a      0x412 CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c.obj
- .debug_abbrev  0x00004d5c      0x3cc CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/trace/adv_trace/stm32_adv_trace.c.obj
- .debug_abbrev  0x00005128       0xbd CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_mem.c.obj
- .debug_abbrev  0x000051e5      0x280 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_systime.c.obj
- .debug_abbrev  0x00005465      0x16f CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_tiny_vsnprintf.c.obj
- .debug_abbrev  0x000055d4      0x298 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/sequencer/stm32_seq.c.obj
- .debug_abbrev  0x0000586c      0x2d9 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/timer/stm32_timer.c.obj
- .debug_abbrev  0x00005b45      0x1e1 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/lpm/tiny_lpm/stm32_lpm.c.obj
- .debug_abbrev  0x00005d26       0x24 CMakeFiles/SubGHz_Phy_PingPong.dir/startup_stm32wl55xx_cm4.s.obj
- .debug_abbrev  0x00005d4a       0x79 /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-strncmp.o)
- .debug_abbrev  0x00005dc3       0xc1 /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-memcpy-stub.o)
- .debug_abbrev  0x00005e84       0x28 /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-strlen.o)
+ .debug_abbrev  0x00001af8      0x2d3 CMakeFiles/SubGHz_Phy_PingPong.dir/SubGHz_Phy/App/subghz_phy_app.c.obj
+ .debug_abbrev  0x00001dcb      0x21c CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.c.obj
+ .debug_abbrev  0x00001fe7      0x32d CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+ .debug_abbrev  0x00002314      0x2cb CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
+ .debug_abbrev  0x000025df      0x1e9 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c.obj
+ .debug_abbrev  0x000027c8      0x22a CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_dma.c.obj
+ .debug_abbrev  0x000029f2      0x209 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr.c.obj
+ .debug_abbrev  0x00002bfb      0x302 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c.obj
+ .debug_abbrev  0x00002efd      0x2e8 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
+ .debug_abbrev  0x000031e5      0x344 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
+ .debug_abbrev  0x00003529      0x229 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rtc.c.obj
+ .debug_abbrev  0x00003752      0x24a CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rtc_ex.c.obj
+ .debug_abbrev  0x0000399c      0x299 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_subghz.c.obj
+ .debug_abbrev  0x00003c35      0x352 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
+ .debug_abbrev  0x00003f87      0x2d2 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
+ .debug_abbrev  0x00004259      0x13e CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/system_stm32wlxx.c.obj
+ .debug_abbrev  0x00004397      0x3d6 CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio.c.obj
+ .debug_abbrev  0x0000476d      0x207 CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_fw.c.obj
+ .debug_abbrev  0x00004974      0x412 CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c.obj
+ .debug_abbrev  0x00004d86      0x3cc CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/trace/adv_trace/stm32_adv_trace.c.obj
+ .debug_abbrev  0x00005152       0xbd CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_mem.c.obj
+ .debug_abbrev  0x0000520f      0x280 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_systime.c.obj
+ .debug_abbrev  0x0000548f      0x16f CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_tiny_vsnprintf.c.obj
+ .debug_abbrev  0x000055fe      0x298 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/sequencer/stm32_seq.c.obj
+ .debug_abbrev  0x00005896      0x2d9 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/timer/stm32_timer.c.obj
+ .debug_abbrev  0x00005b6f      0x1e1 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/lpm/tiny_lpm/stm32_lpm.c.obj
+ .debug_abbrev  0x00005d50       0x24 CMakeFiles/SubGHz_Phy_PingPong.dir/startup_stm32wl55xx_cm4.s.obj
+ .debug_abbrev  0x00005d74       0x79 /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-strncmp.o)
+ .debug_abbrev  0x00005ded       0xc1 /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_abbrev  0x00005eae       0x28 /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-strlen.o)
 
 .debug_aranges  0x00000000     0x1fc0
  .debug_aranges
@@ -9371,7 +9371,7 @@ LOAD /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  .debug_macro   0x0002321b      0x1a6 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/timer/stm32_timer.c.obj
  .debug_macro   0x000233c1      0x1ab CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/lpm/tiny_lpm/stm32_lpm.c.obj
 
-.debug_line     0x00000000    0x22a28
+.debug_line     0x00000000    0x22a2a
  .debug_line    0x00000000      0x8b5 CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/main.c.obj
  .debug_line    0x000008b5      0x7fd CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/gpio.c.obj
  .debug_line    0x000010b2      0x7ca CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/dma.c.obj
@@ -9387,36 +9387,36 @@ LOAD /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eab
  .debug_line    0x0000760a      0x7a7 CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/stm32wlxx_hal_msp.c.obj
  .debug_line    0x00007db1      0x978 CMakeFiles/SubGHz_Phy_PingPong.dir/SubGHz_Phy/Target/radio_board_if.c.obj
  .debug_line    0x00008729      0x5c1 CMakeFiles/SubGHz_Phy_PingPong.dir/SubGHz_Phy/App/app_subghz_phy.c.obj
- .debug_line    0x00008cea      0xf2f CMakeFiles/SubGHz_Phy_PingPong.dir/SubGHz_Phy/App/subghz_phy_app.c.obj
- .debug_line    0x00009c19      0x902 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.c.obj
- .debug_line    0x0000a51b     0x1753 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
- .debug_line    0x0000bc6e     0x1415 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
- .debug_line    0x0000d083      0xbd1 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c.obj
- .debug_line    0x0000dc54      0xfa3 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_dma.c.obj
- .debug_line    0x0000ebf7      0xa23 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr.c.obj
- .debug_line    0x0000f61a      0xed5 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c.obj
- .debug_line    0x000104ef      0xd3c CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
- .debug_line    0x0001122b      0xf2d CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
- .debug_line    0x00012158     0x1008 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rtc.c.obj
- .debug_line    0x00013160     0x14bf CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rtc_ex.c.obj
- .debug_line    0x0001461f     0x1084 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_subghz.c.obj
- .debug_line    0x000156a3     0x3c3d CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
- .debug_line    0x000192e0      0xdff CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
- .debug_line    0x0001a0df      0x83e CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/system_stm32wlxx.c.obj
- .debug_line    0x0001a91d     0x1dbc CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio.c.obj
- .debug_line    0x0001c6d9      0xdad CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_fw.c.obj
- .debug_line    0x0001d486     0x1985 CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c.obj
- .debug_line    0x0001ee0b      0xc14 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/trace/adv_trace/stm32_adv_trace.c.obj
- .debug_line    0x0001fa1f      0x4e8 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_mem.c.obj
- .debug_line    0x0001ff07      0x703 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_systime.c.obj
- .debug_line    0x0002060a      0x624 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_tiny_vsnprintf.c.obj
- .debug_line    0x00020c2e      0xa1e CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/sequencer/stm32_seq.c.obj
- .debug_line    0x0002164c      0x966 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/timer/stm32_timer.c.obj
- .debug_line    0x00021fb2      0x612 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/lpm/tiny_lpm/stm32_lpm.c.obj
- .debug_line    0x000225c4       0x7b CMakeFiles/SubGHz_Phy_PingPong.dir/startup_stm32wl55xx_cm4.s.obj
- .debug_line    0x0002263f      0x198 /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-strncmp.o)
- .debug_line    0x000227d7      0x202 /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-memcpy-stub.o)
- .debug_line    0x000229d9       0x4f /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-strlen.o)
+ .debug_line    0x00008cea      0xf31 CMakeFiles/SubGHz_Phy_PingPong.dir/SubGHz_Phy/App/subghz_phy_app.c.obj
+ .debug_line    0x00009c1b      0x902 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.c.obj
+ .debug_line    0x0000a51d     0x1753 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+ .debug_line    0x0000bc70     0x1415 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
+ .debug_line    0x0000d085      0xbd1 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c.obj
+ .debug_line    0x0000dc56      0xfa3 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_dma.c.obj
+ .debug_line    0x0000ebf9      0xa23 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr.c.obj
+ .debug_line    0x0000f61c      0xed5 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c.obj
+ .debug_line    0x000104f1      0xd3c CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
+ .debug_line    0x0001122d      0xf2d CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
+ .debug_line    0x0001215a     0x1008 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rtc.c.obj
+ .debug_line    0x00013162     0x14bf CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rtc_ex.c.obj
+ .debug_line    0x00014621     0x1084 CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_subghz.c.obj
+ .debug_line    0x000156a5     0x3c3d CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
+ .debug_line    0x000192e2      0xdff CMakeFiles/SubGHz_Phy_PingPong.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
+ .debug_line    0x0001a0e1      0x83e CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/system_stm32wlxx.c.obj
+ .debug_line    0x0001a91f     0x1dbc CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio.c.obj
+ .debug_line    0x0001c6db      0xdad CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_fw.c.obj
+ .debug_line    0x0001d488     0x1985 CMakeFiles/SubGHz_Phy_PingPong.dir/Middlewares/Third_Party/SubGHz_Phy/stm32_radio_driver/radio_driver.c.obj
+ .debug_line    0x0001ee0d      0xc14 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/trace/adv_trace/stm32_adv_trace.c.obj
+ .debug_line    0x0001fa21      0x4e8 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_mem.c.obj
+ .debug_line    0x0001ff09      0x703 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_systime.c.obj
+ .debug_line    0x0002060c      0x624 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/misc/stm32_tiny_vsnprintf.c.obj
+ .debug_line    0x00020c30      0xa1e CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/sequencer/stm32_seq.c.obj
+ .debug_line    0x0002164e      0x966 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/timer/stm32_timer.c.obj
+ .debug_line    0x00021fb4      0x612 CMakeFiles/SubGHz_Phy_PingPong.dir/Utilities/lpm/tiny_lpm/stm32_lpm.c.obj
+ .debug_line    0x000225c6       0x7b CMakeFiles/SubGHz_Phy_PingPong.dir/startup_stm32wl55xx_cm4.s.obj
+ .debug_line    0x00022641      0x198 /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-strncmp.o)
+ .debug_line    0x000227d9      0x202 /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-memcpy-stub.o)
+ .debug_line    0x000229db       0x4f /opt/ST/STM32CubeCLT_1.16.0/GNU-tools-for-STM32/bin/../lib/gcc/arm-none-eabi/12.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libg_nano.a(libc_a-strlen.o)
 
 .debug_str      0x00000000    0xc5322
  .debug_str     0x00000000    0xafecb CMakeFiles/SubGHz_Phy_PingPong.dir/Core/Src/main.c.obj

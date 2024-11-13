@@ -70,3 +70,5 @@
 2327	3574	1731457357101088013	_deps/olarm_protocol_y-build/LoraInterface/CMakeFiles/LoraInterface.dir/LoraInterface.cpp.obj	2c807a8879e49aaa
 3497	3592	1731457357121118000	_deps/olarm_protocol_y-build/AESEncryption/libAESEncryption.a	25079d755dcfa183
 3574	3629	1731457357157629000	_deps/olarm_protocol_y-build/LoraInterface/libLoraInterface.a	55fd6815fc7469a1
+11	457	1731477966978988002	CMakeFiles/SubGHz_Phy_PingPong.dir/SubGHz_Phy/App/subghz_phy_app.c.obj	14712f985c475842
+458	769	1731477967285278863	SubGHz_Phy_PingPong.elf	556f7faa7434c167
