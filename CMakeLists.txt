@@ -23,7 +23,7 @@ include(FetchContent)
 FetchContent_Declare(
   olarm_protocol_y
   GIT_REPOSITORY git@github.com:OlarmTech/olarm_protocol_y.git
-  GIT_TAG        ULPN-628-Limit-Protocol-Y-Testing-to-only-the-Submodule
+  GIT_TAG        Submodule-tweaking
 )
 FetchContent_MakeAvailable(olarm_protocol_y)
 
@@ -81,4 +81,13 @@ target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
 #     # Add user defined libraries
 # )
 # Link only the ProtocolYMessages target to your project
-target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE ProtocolYMessages stm32cubemx)
+target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE
+    LoraInterface
+    ProtocolYReturnCodes
+    ProtocolYInterface
+    ProtocolYManager
+    ProtocolYMessages 
+    ProtocolYManager
+    AESEncryption
+    stm32cubemx
+)
