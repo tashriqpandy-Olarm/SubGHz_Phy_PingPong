@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "_deps/olarm_protocol_y-build/LoraInterface",
+		"source" : "build/Debug/_deps/olarm_protocol_y-src/LoraInterface"
+	}
+}

@@ -530,6 +530,455 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Utility command for edit_cache
 
+build _deps/olarm_protocol_y-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build && /opt/ST/STM32CubeCLT_1.16.0/CMake/bin/ccmake -S/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong -B/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build _deps/olarm_protocol_y-build/edit_cache: phony _deps/olarm_protocol_y-build/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/olarm_protocol_y-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build && /opt/ST/STM32CubeCLT_1.16.0/CMake/bin/cmake --regenerate-during-build -S/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong -B/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/olarm_protocol_y-build/rebuild_cache: phony _deps/olarm_protocol_y-build/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target LoraInterface
+
+
+#############################################
+# Order-only phony target for LoraInterface
+
+build cmake_object_order_depends_target_LoraInterface: phony || _deps/olarm_protocol_y-build/LoraInterface/CMakeFiles/LoraInterface.dir
+
+build _deps/olarm_protocol_y-build/LoraInterface/CMakeFiles/LoraInterface.dir/LoraInterface.cpp.obj: CXX_COMPILER__LoraInterface_unscanned_Debug /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/LoraInterface/LoraInterface.cpp || cmake_object_order_depends_target_LoraInterface
+  DEP_FILE = _deps/olarm_protocol_y-build/LoraInterface/CMakeFiles/LoraInterface.dir/LoraInterface.cpp.obj.d
+  FLAGS = -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g -std=gnu++23 -fPIC
+  INCLUDES = -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/LoraInterface/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYReturnCodes/include
+  OBJECT_DIR = _deps/olarm_protocol_y-build/LoraInterface/CMakeFiles/LoraInterface.dir
+  OBJECT_FILE_DIR = _deps/olarm_protocol_y-build/LoraInterface/CMakeFiles/LoraInterface.dir
+  TARGET_COMPILE_PDB = _deps/olarm_protocol_y-build/LoraInterface/CMakeFiles/LoraInterface.dir/LoraInterface.pdb
+  TARGET_PDB = _deps/olarm_protocol_y-build/LoraInterface/libLoraInterface.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target LoraInterface
+
+
+#############################################
+# Link the static library _deps/olarm_protocol_y-build/LoraInterface/libLoraInterface.a
+
+build _deps/olarm_protocol_y-build/LoraInterface/libLoraInterface.a: CXX_STATIC_LIBRARY_LINKER__LoraInterface_Debug _deps/olarm_protocol_y-build/LoraInterface/CMakeFiles/LoraInterface.dir/LoraInterface.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g
+  OBJECT_DIR = _deps/olarm_protocol_y-build/LoraInterface/CMakeFiles/LoraInterface.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = _deps/olarm_protocol_y-build/LoraInterface/CMakeFiles/LoraInterface.dir/LoraInterface.pdb
+  TARGET_FILE = _deps/olarm_protocol_y-build/LoraInterface/libLoraInterface.a
+  TARGET_PDB = _deps/olarm_protocol_y-build/LoraInterface/libLoraInterface.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/olarm_protocol_y-build/LoraInterface/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/LoraInterface && /opt/ST/STM32CubeCLT_1.16.0/CMake/bin/ccmake -S/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong -B/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build _deps/olarm_protocol_y-build/LoraInterface/edit_cache: phony _deps/olarm_protocol_y-build/LoraInterface/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/olarm_protocol_y-build/LoraInterface/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/LoraInterface && /opt/ST/STM32CubeCLT_1.16.0/CMake/bin/cmake --regenerate-during-build -S/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong -B/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/olarm_protocol_y-build/LoraInterface/rebuild_cache: phony _deps/olarm_protocol_y-build/LoraInterface/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target ProtocolYReturnCodes
+
+
+#############################################
+# Order-only phony target for ProtocolYReturnCodes
+
+build cmake_object_order_depends_target_ProtocolYReturnCodes: phony || _deps/olarm_protocol_y-build/ProtocolYReturnCodes/CMakeFiles/ProtocolYReturnCodes.dir
+
+build _deps/olarm_protocol_y-build/ProtocolYReturnCodes/CMakeFiles/ProtocolYReturnCodes.dir/ProtocolYReturnCodes.cpp.obj: CXX_COMPILER__ProtocolYReturnCodes_unscanned_Debug /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYReturnCodes/ProtocolYReturnCodes.cpp || cmake_object_order_depends_target_ProtocolYReturnCodes
+  DEP_FILE = _deps/olarm_protocol_y-build/ProtocolYReturnCodes/CMakeFiles/ProtocolYReturnCodes.dir/ProtocolYReturnCodes.cpp.obj.d
+  FLAGS = -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g -std=gnu++23 -fPIC
+  INCLUDES = -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYReturnCodes/include
+  OBJECT_DIR = _deps/olarm_protocol_y-build/ProtocolYReturnCodes/CMakeFiles/ProtocolYReturnCodes.dir
+  OBJECT_FILE_DIR = _deps/olarm_protocol_y-build/ProtocolYReturnCodes/CMakeFiles/ProtocolYReturnCodes.dir
+  TARGET_COMPILE_PDB = _deps/olarm_protocol_y-build/ProtocolYReturnCodes/CMakeFiles/ProtocolYReturnCodes.dir/ProtocolYReturnCodes.pdb
+  TARGET_PDB = _deps/olarm_protocol_y-build/ProtocolYReturnCodes/libProtocolYReturnCodes.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target ProtocolYReturnCodes
+
+
+#############################################
+# Link the static library _deps/olarm_protocol_y-build/ProtocolYReturnCodes/libProtocolYReturnCodes.a
+
+build _deps/olarm_protocol_y-build/ProtocolYReturnCodes/libProtocolYReturnCodes.a: CXX_STATIC_LIBRARY_LINKER__ProtocolYReturnCodes_Debug _deps/olarm_protocol_y-build/ProtocolYReturnCodes/CMakeFiles/ProtocolYReturnCodes.dir/ProtocolYReturnCodes.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g
+  OBJECT_DIR = _deps/olarm_protocol_y-build/ProtocolYReturnCodes/CMakeFiles/ProtocolYReturnCodes.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = _deps/olarm_protocol_y-build/ProtocolYReturnCodes/CMakeFiles/ProtocolYReturnCodes.dir/ProtocolYReturnCodes.pdb
+  TARGET_FILE = _deps/olarm_protocol_y-build/ProtocolYReturnCodes/libProtocolYReturnCodes.a
+  TARGET_PDB = _deps/olarm_protocol_y-build/ProtocolYReturnCodes/libProtocolYReturnCodes.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/olarm_protocol_y-build/ProtocolYReturnCodes/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/ProtocolYReturnCodes && /opt/ST/STM32CubeCLT_1.16.0/CMake/bin/ccmake -S/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong -B/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build _deps/olarm_protocol_y-build/ProtocolYReturnCodes/edit_cache: phony _deps/olarm_protocol_y-build/ProtocolYReturnCodes/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/olarm_protocol_y-build/ProtocolYReturnCodes/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/ProtocolYReturnCodes && /opt/ST/STM32CubeCLT_1.16.0/CMake/bin/cmake --regenerate-during-build -S/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong -B/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/olarm_protocol_y-build/ProtocolYReturnCodes/rebuild_cache: phony _deps/olarm_protocol_y-build/ProtocolYReturnCodes/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target ProtocolYInterface
+
+
+#############################################
+# Order-only phony target for ProtocolYInterface
+
+build cmake_object_order_depends_target_ProtocolYInterface: phony || cmake_object_order_depends_target_ProtocolYManager
+
+build _deps/olarm_protocol_y-build/ProtocolYInterface/CMakeFiles/ProtocolYInterface.dir/ProtocolYInterface.cpp.obj: CXX_COMPILER__ProtocolYInterface_unscanned_Debug /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYInterface/ProtocolYInterface.cpp || cmake_object_order_depends_target_ProtocolYInterface
+  DEP_FILE = _deps/olarm_protocol_y-build/ProtocolYInterface/CMakeFiles/ProtocolYInterface.dir/ProtocolYInterface.cpp.obj.d
+  FLAGS = -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g -std=gnu++23 -fPIC
+  INCLUDES = -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYInterface/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYReturnCodes/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYManager/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/LoraInterface/include
+  OBJECT_DIR = _deps/olarm_protocol_y-build/ProtocolYInterface/CMakeFiles/ProtocolYInterface.dir
+  OBJECT_FILE_DIR = _deps/olarm_protocol_y-build/ProtocolYInterface/CMakeFiles/ProtocolYInterface.dir
+  TARGET_COMPILE_PDB = _deps/olarm_protocol_y-build/ProtocolYInterface/CMakeFiles/ProtocolYInterface.dir/ProtocolYInterface.pdb
+  TARGET_PDB = _deps/olarm_protocol_y-build/ProtocolYInterface/libProtocolYInterface.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target ProtocolYInterface
+
+
+#############################################
+# Link the static library _deps/olarm_protocol_y-build/ProtocolYInterface/libProtocolYInterface.a
+
+build _deps/olarm_protocol_y-build/ProtocolYInterface/libProtocolYInterface.a: CXX_STATIC_LIBRARY_LINKER__ProtocolYInterface_Debug _deps/olarm_protocol_y-build/ProtocolYInterface/CMakeFiles/ProtocolYInterface.dir/ProtocolYInterface.cpp.obj || _deps/olarm_protocol_y-build/ProtocolYManager/libProtocolYManager.a
+  LANGUAGE_COMPILE_FLAGS = -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g
+  OBJECT_DIR = _deps/olarm_protocol_y-build/ProtocolYInterface/CMakeFiles/ProtocolYInterface.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = _deps/olarm_protocol_y-build/ProtocolYInterface/CMakeFiles/ProtocolYInterface.dir/ProtocolYInterface.pdb
+  TARGET_FILE = _deps/olarm_protocol_y-build/ProtocolYInterface/libProtocolYInterface.a
+  TARGET_PDB = _deps/olarm_protocol_y-build/ProtocolYInterface/libProtocolYInterface.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/olarm_protocol_y-build/ProtocolYInterface/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/ProtocolYInterface && /opt/ST/STM32CubeCLT_1.16.0/CMake/bin/ccmake -S/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong -B/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build _deps/olarm_protocol_y-build/ProtocolYInterface/edit_cache: phony _deps/olarm_protocol_y-build/ProtocolYInterface/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/olarm_protocol_y-build/ProtocolYInterface/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/ProtocolYInterface && /opt/ST/STM32CubeCLT_1.16.0/CMake/bin/cmake --regenerate-during-build -S/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong -B/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/olarm_protocol_y-build/ProtocolYInterface/rebuild_cache: phony _deps/olarm_protocol_y-build/ProtocolYInterface/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target ProtocolYManager
+
+
+#############################################
+# Order-only phony target for ProtocolYManager
+
+build cmake_object_order_depends_target_ProtocolYManager: phony || _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/ProtocolYManager.dir
+
+build _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/ProtocolYManager.dir/ProtocolYManager.cpp.obj: CXX_COMPILER__ProtocolYManager_unscanned_Debug /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYManager/ProtocolYManager.cpp || cmake_object_order_depends_target_ProtocolYManager
+  DEP_FILE = _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/ProtocolYManager.dir/ProtocolYManager.cpp.obj.d
+  FLAGS = -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g -std=gnu++23 -fPIC
+  INCLUDES = -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYManager/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYReturnCodes/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYInterface/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/LoraInterface/include
+  OBJECT_DIR = _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/ProtocolYManager.dir
+  OBJECT_FILE_DIR = _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/ProtocolYManager.dir
+  TARGET_COMPILE_PDB = _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/ProtocolYManager.dir/ProtocolYManager.pdb
+  TARGET_PDB = _deps/olarm_protocol_y-build/ProtocolYManager/libProtocolYManager.pdb
+
+build _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/ProtocolYManager.dir/DeviceInfo.cpp.obj: CXX_COMPILER__ProtocolYManager_unscanned_Debug /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYManager/DeviceInfo.cpp || cmake_object_order_depends_target_ProtocolYManager
+  DEP_FILE = _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/ProtocolYManager.dir/DeviceInfo.cpp.obj.d
+  FLAGS = -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g -std=gnu++23 -fPIC
+  INCLUDES = -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYManager/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYReturnCodes/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYInterface/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/LoraInterface/include
+  OBJECT_DIR = _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/ProtocolYManager.dir
+  OBJECT_FILE_DIR = _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/ProtocolYManager.dir
+  TARGET_COMPILE_PDB = _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/ProtocolYManager.dir/ProtocolYManager.pdb
+  TARGET_PDB = _deps/olarm_protocol_y-build/ProtocolYManager/libProtocolYManager.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target ProtocolYManager
+
+
+#############################################
+# Link the static library _deps/olarm_protocol_y-build/ProtocolYManager/libProtocolYManager.a
+
+build _deps/olarm_protocol_y-build/ProtocolYManager/libProtocolYManager.a: CXX_STATIC_LIBRARY_LINKER__ProtocolYManager_Debug _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/ProtocolYManager.dir/ProtocolYManager.cpp.obj _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/ProtocolYManager.dir/DeviceInfo.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g
+  OBJECT_DIR = _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/ProtocolYManager.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/ProtocolYManager.dir/ProtocolYManager.pdb
+  TARGET_FILE = _deps/olarm_protocol_y-build/ProtocolYManager/libProtocolYManager.a
+  TARGET_PDB = _deps/olarm_protocol_y-build/ProtocolYManager/libProtocolYManager.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/ProtocolYManager && /opt/ST/STM32CubeCLT_1.16.0/CMake/bin/ccmake -S/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong -B/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build _deps/olarm_protocol_y-build/ProtocolYManager/edit_cache: phony _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/ProtocolYManager && /opt/ST/STM32CubeCLT_1.16.0/CMake/bin/cmake --regenerate-during-build -S/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong -B/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/olarm_protocol_y-build/ProtocolYManager/rebuild_cache: phony _deps/olarm_protocol_y-build/ProtocolYManager/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target ProtocolYMessages
+
+
+#############################################
+# Order-only phony target for ProtocolYMessages
+
+build cmake_object_order_depends_target_ProtocolYMessages: phony || cmake_object_order_depends_target_ProtocolYManager
+
+build _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir/ProtocolYMessages.cpp.obj: CXX_COMPILER__ProtocolYMessages_unscanned_Debug /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYMessages/ProtocolYMessages.cpp || cmake_object_order_depends_target_ProtocolYMessages
+  DEP_FILE = _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir/ProtocolYMessages.cpp.obj.d
+  FLAGS = -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g -std=gnu++23 -fPIC
+  INCLUDES = -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYMessages/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYReturnCodes/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYManager/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYInterface/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/LoraInterface/include
+  OBJECT_DIR = _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir
+  OBJECT_FILE_DIR = _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir
+  TARGET_COMPILE_PDB = _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir/ProtocolYMessages.pdb
+  TARGET_PDB = _deps/olarm_protocol_y-build/ProtocolYMessages/libProtocolYMessages.pdb
+
+build _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir/buildPayLoad.c.obj: C_COMPILER__ProtocolYMessages_unscanned_Debug /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYMessages/buildPayLoad.c || cmake_object_order_depends_target_ProtocolYMessages
+  DEP_FILE = _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir/buildPayLoad.c.obj.d
+  FLAGS = -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -fPIC
+  INCLUDES = -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYMessages/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYReturnCodes/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYManager/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYInterface/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/LoraInterface/include
+  OBJECT_DIR = _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir
+  OBJECT_FILE_DIR = _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir
+  TARGET_COMPILE_PDB = _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir/ProtocolYMessages.pdb
+  TARGET_PDB = _deps/olarm_protocol_y-build/ProtocolYMessages/libProtocolYMessages.pdb
+
+build _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir/messageFunctions.c.obj: C_COMPILER__ProtocolYMessages_unscanned_Debug /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYMessages/messageFunctions.c || cmake_object_order_depends_target_ProtocolYMessages
+  DEP_FILE = _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir/messageFunctions.c.obj.d
+  FLAGS = -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11 -fPIC
+  INCLUDES = -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYMessages/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYReturnCodes/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYManager/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYInterface/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/LoraInterface/include
+  OBJECT_DIR = _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir
+  OBJECT_FILE_DIR = _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir
+  TARGET_COMPILE_PDB = _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir/ProtocolYMessages.pdb
+  TARGET_PDB = _deps/olarm_protocol_y-build/ProtocolYMessages/libProtocolYMessages.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target ProtocolYMessages
+
+
+#############################################
+# Link the static library _deps/olarm_protocol_y-build/ProtocolYMessages/libProtocolYMessages.a
+
+build _deps/olarm_protocol_y-build/ProtocolYMessages/libProtocolYMessages.a: CXX_STATIC_LIBRARY_LINKER__ProtocolYMessages_Debug _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir/ProtocolYMessages.cpp.obj _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir/buildPayLoad.c.obj _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir/messageFunctions.c.obj || _deps/olarm_protocol_y-build/ProtocolYManager/libProtocolYManager.a
+  LANGUAGE_COMPILE_FLAGS = -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g
+  OBJECT_DIR = _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/ProtocolYMessages.dir/ProtocolYMessages.pdb
+  TARGET_FILE = _deps/olarm_protocol_y-build/ProtocolYMessages/libProtocolYMessages.a
+  TARGET_PDB = _deps/olarm_protocol_y-build/ProtocolYMessages/libProtocolYMessages.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/ProtocolYMessages && /opt/ST/STM32CubeCLT_1.16.0/CMake/bin/ccmake -S/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong -B/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build _deps/olarm_protocol_y-build/ProtocolYMessages/edit_cache: phony _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/ProtocolYMessages && /opt/ST/STM32CubeCLT_1.16.0/CMake/bin/cmake --regenerate-during-build -S/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong -B/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/olarm_protocol_y-build/ProtocolYMessages/rebuild_cache: phony _deps/olarm_protocol_y-build/ProtocolYMessages/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target AESEncryption
+
+
+#############################################
+# Order-only phony target for AESEncryption
+
+build cmake_object_order_depends_target_AESEncryption: phony || _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/AESEncryption.dir
+
+build _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/AESEncryption.dir/StaticAES.cpp.obj: CXX_COMPILER__AESEncryption_unscanned_Debug /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/AESEncryption/StaticAES.cpp || cmake_object_order_depends_target_AESEncryption
+  DEP_FILE = _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/AESEncryption.dir/StaticAES.cpp.obj.d
+  FLAGS = -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g -std=gnu++23 -fPIC
+  INCLUDES = -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/AESEncryption/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYReturnCodes/include
+  OBJECT_DIR = _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/AESEncryption.dir
+  OBJECT_FILE_DIR = _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/AESEncryption.dir
+  TARGET_COMPILE_PDB = _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/AESEncryption.dir/AESEncryption.pdb
+  TARGET_PDB = _deps/olarm_protocol_y-build/AESEncryption/libAESEncryption.pdb
+
+build _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/AESEncryption.dir/AESSoftware.cpp.obj: CXX_COMPILER__AESEncryption_unscanned_Debug /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/AESEncryption/AESSoftware.cpp || cmake_object_order_depends_target_AESEncryption
+  DEP_FILE = _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/AESEncryption.dir/AESSoftware.cpp.obj.d
+  FLAGS = -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g -std=gnu++23 -fPIC
+  INCLUDES = -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/AESEncryption/include -I/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-src/ProtocolYReturnCodes/include
+  OBJECT_DIR = _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/AESEncryption.dir
+  OBJECT_FILE_DIR = _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/AESEncryption.dir
+  TARGET_COMPILE_PDB = _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/AESEncryption.dir/AESEncryption.pdb
+  TARGET_PDB = _deps/olarm_protocol_y-build/AESEncryption/libAESEncryption.pdb
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target AESEncryption
+
+
+#############################################
+# Link the static library _deps/olarm_protocol_y-build/AESEncryption/libAESEncryption.a
+
+build _deps/olarm_protocol_y-build/AESEncryption/libAESEncryption.a: CXX_STATIC_LIBRARY_LINKER__AESEncryption_Debug _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/AESEncryption.dir/StaticAES.cpp.obj _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/AESEncryption.dir/AESSoftware.cpp.obj
+  LANGUAGE_COMPILE_FLAGS = -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -mcpu=cortex-m4  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -fno-rtti -fno-exceptions -fno-threadsafe-statics -g
+  OBJECT_DIR = _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/AESEncryption.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_COMPILE_PDB = _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/AESEncryption.dir/AESEncryption.pdb
+  TARGET_FILE = _deps/olarm_protocol_y-build/AESEncryption/libAESEncryption.a
+  TARGET_PDB = _deps/olarm_protocol_y-build/AESEncryption/libAESEncryption.pdb
+
+
+#############################################
+# Utility command for edit_cache
+
+build _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/AESEncryption && /opt/ST/STM32CubeCLT_1.16.0/CMake/bin/ccmake -S/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong -B/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build _deps/olarm_protocol_y-build/AESEncryption/edit_cache: phony _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/AESEncryption && /opt/ST/STM32CubeCLT_1.16.0/CMake/bin/cmake --regenerate-during-build -S/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong -B/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build _deps/olarm_protocol_y-build/AESEncryption/rebuild_cache: phony _deps/olarm_protocol_y-build/AESEncryption/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
 build cmake/stm32cubemx/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
   COMMAND = cd /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/cmake/stm32cubemx && /opt/ST/STM32CubeCLT_1.16.0/CMake/bin/ccmake -S/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong -B/Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug
   DESC = Running CMake cache editor...
@@ -553,7 +1002,31 @@ build cmake/stm32cubemx/rebuild_cache: phony cmake/stm32cubemx/CMakeFiles/rebuil
 # =============================================================================
 # Target aliases.
 
+build AESEncryption: phony _deps/olarm_protocol_y-build/AESEncryption/libAESEncryption.a
+
+build LoraInterface: phony _deps/olarm_protocol_y-build/LoraInterface/libLoraInterface.a
+
+build ProtocolYInterface: phony _deps/olarm_protocol_y-build/ProtocolYInterface/libProtocolYInterface.a
+
+build ProtocolYManager: phony _deps/olarm_protocol_y-build/ProtocolYManager/libProtocolYManager.a
+
+build ProtocolYMessages: phony _deps/olarm_protocol_y-build/ProtocolYMessages/libProtocolYMessages.a
+
+build ProtocolYReturnCodes: phony _deps/olarm_protocol_y-build/ProtocolYReturnCodes/libProtocolYReturnCodes.a
+
 build SubGHz_Phy_PingPong: phony SubGHz_Phy_PingPong.elf
+
+build libAESEncryption.a: phony _deps/olarm_protocol_y-build/AESEncryption/libAESEncryption.a
+
+build libLoraInterface.a: phony _deps/olarm_protocol_y-build/LoraInterface/libLoraInterface.a
+
+build libProtocolYInterface.a: phony _deps/olarm_protocol_y-build/ProtocolYInterface/libProtocolYInterface.a
+
+build libProtocolYManager.a: phony _deps/olarm_protocol_y-build/ProtocolYManager/libProtocolYManager.a
+
+build libProtocolYMessages.a: phony _deps/olarm_protocol_y-build/ProtocolYMessages/libProtocolYMessages.a
+
+build libProtocolYReturnCodes.a: phony _deps/olarm_protocol_y-build/ProtocolYReturnCodes/libProtocolYReturnCodes.a
 
 # =============================================================================
 # Folder targets.
@@ -563,7 +1036,56 @@ build SubGHz_Phy_PingPong: phony SubGHz_Phy_PingPong.elf
 #############################################
 # Folder: /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug
 
-build all: phony SubGHz_Phy_PingPong.elf cmake/stm32cubemx/all
+build all: phony SubGHz_Phy_PingPong.elf _deps/olarm_protocol_y-build/all cmake/stm32cubemx/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build
+
+build _deps/olarm_protocol_y-build/all: phony _deps/olarm_protocol_y-build/LoraInterface/all _deps/olarm_protocol_y-build/ProtocolYReturnCodes/all _deps/olarm_protocol_y-build/ProtocolYInterface/all _deps/olarm_protocol_y-build/ProtocolYManager/all _deps/olarm_protocol_y-build/ProtocolYMessages/all _deps/olarm_protocol_y-build/AESEncryption/all
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/AESEncryption
+
+build _deps/olarm_protocol_y-build/AESEncryption/all: phony _deps/olarm_protocol_y-build/AESEncryption/libAESEncryption.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/LoraInterface
+
+build _deps/olarm_protocol_y-build/LoraInterface/all: phony _deps/olarm_protocol_y-build/LoraInterface/libLoraInterface.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/ProtocolYInterface
+
+build _deps/olarm_protocol_y-build/ProtocolYInterface/all: phony _deps/olarm_protocol_y-build/ProtocolYInterface/libProtocolYInterface.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/ProtocolYManager
+
+build _deps/olarm_protocol_y-build/ProtocolYManager/all: phony _deps/olarm_protocol_y-build/ProtocolYManager/libProtocolYManager.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/ProtocolYMessages
+
+build _deps/olarm_protocol_y-build/ProtocolYMessages/all: phony _deps/olarm_protocol_y-build/ProtocolYMessages/libProtocolYMessages.a
+
+# =============================================================================
+
+#############################################
+# Folder: /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/build/Debug/_deps/olarm_protocol_y-build/ProtocolYReturnCodes
+
+build _deps/olarm_protocol_y-build/ProtocolYReturnCodes/all: phony _deps/olarm_protocol_y-build/ProtocolYReturnCodes/libProtocolYReturnCodes.a
 
 # =============================================================================
 
@@ -579,14 +1101,14 @@ build cmake/stm32cubemx/all: phony
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/CMakeLists.txt /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/cmake/gcc-arm-none-eabi.cmake /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/cmake/stm32cubemx/CMakeLists.txt /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/CMakeLists.txt /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/cmake/gcc-arm-none-eabi.cmake /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/cmake/stm32cubemx/CMakeLists.txt /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeASMCompiler.cmake.in /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeNinjaFindMake.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystem.cmake.in /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeTestASMCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/FetchContent.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/FetchContent/CMakeLists.cmake.in /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/FindGit.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/FindPackageMessage.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake _deps/olarm_protocol_y-src/AESEncryption/CMakeLists.txt _deps/olarm_protocol_y-src/CMakeLists.txt _deps/olarm_protocol_y-src/LoraInterface/CMakeLists.txt _deps/olarm_protocol_y-src/ProtocolYInterface/CMakeLists.txt _deps/olarm_protocol_y-src/ProtocolYManager/CMakeLists.txt _deps/olarm_protocol_y-src/ProtocolYMessages/CMakeLists.txt _deps/olarm_protocol_y-src/ProtocolYReturnCodes/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/CMakeLists.txt /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/cmake/gcc-arm-none-eabi.cmake /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/cmake/stm32cubemx/CMakeLists.txt /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake: phony
+build /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/CMakeLists.txt /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/cmake/gcc-arm-none-eabi.cmake /Users/tashriqpandy/Documents/mycode/SubGHz_Phy_PingPong/cmake/stm32cubemx/CMakeLists.txt /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeASMCompiler.cmake.in /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeASMInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCCompiler.cmake.in /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCXXCompiler.cmake.in /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeCompilerIdDetection.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineASMCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCXXCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineCompilerId.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeDetermineSystem.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeFindBinUtils.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeNinjaFindMake.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystem.cmake.in /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeTestASMCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeTestCCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/CMakeTestCXXCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/ADSP-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/ARMCC-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/ARMClang-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/AppleClang-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Borland-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Bruce-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Clang-DetermineCompilerInternal.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Compaq-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Cray-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/CrayClang-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Embarcadero-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Fujitsu-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GHS-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-ASM.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-C.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-CXX.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU-FindBinUtils.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/GNU.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/HP-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/HP-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IAR-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Intel-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/LCC-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/MSVC-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/NVHPC-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/NVIDIA-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/OrangeC-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/PGI-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/PathScale-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/SCO-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/SDCC-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/SunPro-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/TI-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Tasking-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/Watcom-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/XL-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/XL-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/XLClang-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/zOS-C-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/ExternalProject/shared_internal_commands.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/FetchContent.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/FetchContent/CMakeLists.cmake.in /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/FindGit.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/FindPackageMessage.cmake /opt/ST/STM32CubeCLT_1.16.0/CMake/share/cmake-3.28/Modules/Platform/Generic.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeASMCompiler.cmake CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake _deps/olarm_protocol_y-src/AESEncryption/CMakeLists.txt _deps/olarm_protocol_y-src/CMakeLists.txt _deps/olarm_protocol_y-src/LoraInterface/CMakeLists.txt _deps/olarm_protocol_y-src/ProtocolYInterface/CMakeLists.txt _deps/olarm_protocol_y-src/ProtocolYManager/CMakeLists.txt _deps/olarm_protocol_y-src/ProtocolYMessages/CMakeLists.txt _deps/olarm_protocol_y-src/ProtocolYReturnCodes/CMakeLists.txt: phony
 
 
 #############################################

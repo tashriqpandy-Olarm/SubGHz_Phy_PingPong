@@ -16,6 +16,15 @@ set(CMAKE_C_EXTENSIONS ON)
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+include(FetchContent)
+
+FetchContent_Declare(
+  olarm_protocol_y
+  GIT_REPOSITORY git@github.com:OlarmTech/olarm_protocol_y.git
+  GIT_TAG        ULPN-628-Limit-Protocol-Y-Testing-to-only-the-Submodule
+)
+FetchContent_MakeAvailable(olarm_protocol_y)
+
 
 # Define the build type
 if(NOT CMAKE_BUILD_TYPE)
