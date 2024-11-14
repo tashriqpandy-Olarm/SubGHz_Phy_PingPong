@@ -17,7 +17,7 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
-
+#define HUB_DEVICE 0
 /* Includes ------------------------------------------------------------------*/
 #include "platform.h"
 #include "sys_app.h"
@@ -58,8 +58,8 @@ typedef enum
 /* USER CODE BEGIN PD */
 /* Configurations */
 /*Timeout*/
-#define RX_TIMEOUT_VALUE              0
-#define TX_TIMEOUT_VALUE              1000
+#define RX_TIMEOUT_VALUE              10000
+#define TX_TIMEOUT_VALUE              000
 /* PING string*/
 #define PING "PING"
 /* PONG string*/
@@ -72,10 +72,12 @@ typedef enum
 #endif /* (PAYLOAD_LEN > MAX_APP_BUFFER_SIZE) */
 /* wait for remote to be in Rx, before sending a Tx frame*/
 #define RX_TIME_MARGIN                200
-/* Afc bandwidth in Hz */
-#define FSK_AFC_BANDWIDTH             83333
 /* LED blink Period*/
+#if(HUB_DEVICE == 1)
 #define LED_PERIOD_MS                 1000
+#else
+#define LED_PERIOD_MS                 100
+#endif
 
 /* USER CODE END PD */
 
@@ -90,7 +92,11 @@ static RadioEvents_t RadioEvents;
 
 /* USER CODE BEGIN PV */
 /*Ping Pong FSM states */
+#if(HUB_DEVICE == 1)
 static States_t State = TX;
+#else
+static States_t State = RX;
+#endif
 /* App Rx Buffer*/
 static uint8_t BufferRx[MAX_APP_BUFFER_SIZE];
 /* App Tx Buffer*/
@@ -315,122 +321,70 @@ static void OnRxError(void)
 static void PingPong_Process(void)
 {
   Radio.Sleep();
-  return;
-
-  switch (State)
-  {
-    case RX:
-
-      if (isMaster == true)
+  #if(HUB_DEVICE == 1)
+  // Do nothing
+  #else
+    if(State == RX && RxBufferSize > 0) {
+      UTIL_TIMER_Stop(&timerLed);
+      /* switch off green led */
+      HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET); /* LED_GREEN */
+      /* master toggles red led */
+      HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin); /* LED_RED */
+      
+      ProtocolYMessages message(PROTOCOL_Y::MessageTypes::RECEIVE_MODE);
+    
+      if (message.parseMessage(messageBuffer.data()) == static_cast<int>(RCODE::SUCCESS))
       {
-        if (RxBufferSize > 0)
+        uint8_t messageType = message.getMessageType();
+        APP_LOG(TS_ON, VLEVEL_L, "Received message type: %d\n\r", messageType);
+        if (messageType == static_cast<uint8_t>(PROTOCOL_Y::MessageTypes::SYNC_BEACON))
         {
-          if (strncmp((const char *)BufferRx, PONG, sizeof(PONG) - 1) == 0)
+          APP_LOG(TS_ON, VLEVEL_L, "Received SYNC_BEACON\n\r");
+          syncBeaconMessage_t syncBeaconMessage = message.getSyncBeaconMessage();
+          APP_LOG(TS_ON, VLEVEL_L, "appId=%d\n\r", syncBeaconMessage.appId);
+          APP_LOG(TS_ON, VLEVEL_L, "messageType=%d\n\r", syncBeaconMessage.messageType);
+          APP_LOG(TS_ON, VLEVEL_L, "unencryptedMessageCounter=%d\n\r", syncBeaconMessage.unencryptedMessageCounter);
+          APP_LOG(TS_ON, VLEVEL_L, "payloadLength=%d\n\r", syncBeaconMessage.payloadLength);
+          APP_LOG(TS_ON, VLEVEL_L, "protocolVersion=%d\n\r", syncBeaconMessage.protocolVersion);
+          APP_LOG(TS_ON, VLEVEL_L, "unencryptedMaxNodes=%d\n\r", syncBeaconMessage.unencryptedMaxNodes);
+          APP_LOG(TS_ON, VLEVEL_L, "encryptedMessageCounter=%d\n\r", syncBeaconMessage.encryptedMessageCounter);
+          APP_LOG(TS_ON, VLEVEL_L, "encryptedMaxNodes=%d\n\r", syncBeaconMessage.encryptedMaxNodes);
+          APP_LOG(TS_ON, VLEVEL_L, "frequencyHoppingPlan=%d\n\r", syncBeaconMessage.frequencyHoppingPlan);
+          APP_LOG(TS_ON, VLEVEL_L, "crc=%d\n\r", syncBeaconMessage.crc);
+          for (size_t i = 0; i < syncBeaconMessage.payloadLength; i++)
           {
-            // UTIL_TIMER_Stop(&timerLed);
-            /* switch off green led */
-            HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET); /* LED_GREEN */
-            /* master toggles red led */
-            HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin); /* LED_RED */
-            /* Add delay between RX and TX */
-            HAL_Delay(Radio.GetWakeupTime() + RX_TIME_MARGIN);
-            /* master sends PING*/
-            APP_LOG(TS_ON, VLEVEL_L, "..."
-                    "PING"
-                    "\n\r");
-            APP_LOG(TS_ON, VLEVEL_L, "Master Tx start\n\r");
-            memcpy(BufferTx, PING, sizeof(PING) - 1);
-            Radio.Send(BufferTx, PAYLOAD_LEN);
+            APP_LOG(TS_ON, VLEVEL_L, "payload[%d]=%d\n\r", i, syncBeaconMessage.payload[i]);
           }
-          else if (strncmp((const char *)BufferRx, PING, sizeof(PING) - 1) == 0)
-          {
-            /* A master already exists then become a slave */
-            isMaster = false;
-            APP_LOG(TS_ON, VLEVEL_L, "Slave Rx start\n\r");
-            Radio.Rx(RX_TIMEOUT_VALUE);
-          }
-          else /* valid reception but neither a PING or a PONG message */
-          {
-            /* Set device as master and start again */
-            isMaster = true;
-            APP_LOG(TS_ON, VLEVEL_L, "Master Rx start\n\r");
-            Radio.Rx(RX_TIMEOUT_VALUE);
-          }
+          APP_LOG(TS_ON, VLEVEL_L, "RSSI=%d\n\r", RssiValue);
+          APP_LOG(TS_ON, VLEVEL_L, "SNR=%d\n\r", SnrValue);
+          APP_LOG(TS_ON, VLEVEL_L, "RxBufferSize=%d\n\r", RxBufferSize);
         }
       }
-      else
-      {
-        if (RxBufferSize > 0)
-        {
-          if (strncmp((const char *)BufferRx, PING, sizeof(PING) - 1) == 0)
-          {
-            // UTIL_TIMER_Stop(&timerLed);
-            /* switch off red led */
-            HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_RESET); /* LED_RED */
-            /* slave toggles green led */
-            HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin); /* LED_GREEN */
-            /* Add delay between RX and TX */
-            HAL_Delay(Radio.GetWakeupTime() + RX_TIME_MARGIN);
-            /*slave sends PONG*/
-            APP_LOG(TS_ON, VLEVEL_L, "..."
-                    "PONG"
-                    "\n\r");
-            APP_LOG(TS_ON, VLEVEL_L, "Slave  Tx start\n\r");
-            memcpy(BufferTx, PONG, sizeof(PONG) - 1);
-            Radio.Send(BufferTx, PAYLOAD_LEN);
-          }
-          else /* valid reception but not a PING as expected */
-          {
-            /* Set device as master and start again */
-            isMaster = true;
-            APP_LOG(TS_ON, VLEVEL_L, "Master Rx start\n\r");
-            Radio.Rx(RX_TIMEOUT_VALUE);
-          }
-        }
-      }
-      break;
-    case TX:
-      APP_LOG(TS_ON, VLEVEL_L, "Rx start\n\r");
-      Radio.Rx(RX_TIMEOUT_VALUE);
-      break;
-    case RX_TIMEOUT:
-    case RX_ERROR:
-      if (isMaster == true)
-      {
-        /* Send the next PING frame */
-        /* Add delay between RX and TX*/
-        /* add random_delay to force sync between boards after some trials*/
-        HAL_Delay(Radio.GetWakeupTime() + RX_TIME_MARGIN + random_delay);
-        APP_LOG(TS_ON, VLEVEL_L, "Master Tx start\n\r");
-        /* master sends PING*/
-        memcpy(BufferTx, PING, sizeof(PING) - 1);
-        Radio.Send(BufferTx, PAYLOAD_LEN);
-      }
-      else
-      {
-        APP_LOG(TS_ON, VLEVEL_L, "Slave Rx start\n\r");
-        Radio.Rx(RX_TIMEOUT_VALUE);
-      }
-      break;
-    case TX_TIMEOUT:
-      APP_LOG(TS_ON, VLEVEL_L, "Slave Rx start\n\r");
-      Radio.Rx(RX_TIMEOUT_VALUE);
-      break;
-    default:
-      break;
-  }
+    }
+    else {
+      APP_LOG(TS_ON, VLEVEL_L, "TP:RxTimeout\n\r");
+      UTIL_TIMER_Start(&timerLed);
+    }
+    Radio.Rx(RX_TIMEOUT_VALUE);
+  #endif
 }
 
 static void OnledEvent(void *context)
 {
+  #if(HUB_DEVICE == 1)
+  /* switch off red led */
+  HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_RESET); /* LED_RED */
+  /* master toggles green led */
   HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin); /* LED_GREEN */
-  HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin); /* LED_RED */
-  
   Radio.Send(messageBuffer.data(), static_cast<uint8_t>(messageBuffer.size()));
   for (size_t i = 0; i < messageBuffer.size(); i++)
   {
     APP_LOG(TS_ON, VLEVEL_L, "TX[%d]=%d\n\r", i, messageBuffer[i]);
   }
+  return;
+  #endif
+  HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin); /* LED_GREEN */
+  HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin); /* LED_RED */
   UTIL_TIMER_Start(&timerLed);
 }
 
