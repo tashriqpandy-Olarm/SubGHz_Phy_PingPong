@@ -58,8 +58,8 @@ typedef enum
 /* USER CODE BEGIN PD */
 /* Configurations */
 /*Timeout*/
-#define RX_TIMEOUT_VALUE              3000
-#define TX_TIMEOUT_VALUE              3000
+#define RX_TIMEOUT_VALUE              0
+#define TX_TIMEOUT_VALUE              10
 /* PING string*/
 #define PING "PING"
 /* PONG string*/
@@ -75,7 +75,7 @@ typedef enum
 /* Afc bandwidth in Hz */
 #define FSK_AFC_BANDWIDTH             83333
 /* LED blink Period*/
-#define LED_PERIOD_MS                 200
+#define LED_PERIOD_MS                 5000
 
 /* USER CODE END PD */
 
@@ -90,7 +90,7 @@ static RadioEvents_t RadioEvents;
 
 /* USER CODE BEGIN PV */
 /*Ping Pong FSM states */
-static States_t State = RX;
+static States_t State = TX;
 /* App Rx Buffer*/
 static uint8_t BufferRx[MAX_APP_BUFFER_SIZE];
 /* App Tx Buffer*/
@@ -190,7 +190,7 @@ void SubghzApp_Init(void)
 
   /* USER CODE BEGIN SubghzApp_Init_2 */
   /*calculate random delay for synchronization*/
-  random_delay = (Radio.Random()) >> 22; /*10bits random e.g. from 0 to 1023 ms*/
+  random_delay = 0;//(Radio.Random()) >> 22; /*10bits random e.g. from 0 to 1023 ms*/
 
   /* Radio Set frequency */
   Radio.SetChannel(RF_FREQUENCY);
@@ -255,15 +255,10 @@ static void OnRxDone(uint8_t *payload, uint16_t size, int16_t rssi, int8_t LoraS
 {
   /* USER CODE BEGIN OnRxDone */
   APP_LOG(TS_ON, VLEVEL_L, "OnRxDone\n\r");
-#if ((USE_MODEM_LORA == 1) && (USE_MODEM_FSK == 0))
   APP_LOG(TS_ON, VLEVEL_L, "RssiValue=%d dBm, SnrValue=%ddB\n\r", rssi, LoraSnr_FskCfo);
   /* Record payload Signal to noise ratio in Lora*/
   SnrValue = LoraSnr_FskCfo;
-#endif /* USE_MODEM_LORA | USE_MODEM_FSK */
-#if ((USE_MODEM_LORA == 0) && (USE_MODEM_FSK == 1))
-  APP_LOG(TS_ON, VLEVEL_L, "RssiValue=%d dBm, Cfo=%dkHz\n\r", rssi, LoraSnr_FskCfo);
-  SnrValue = 0; /*not applicable in GFSK*/
-#endif /* USE_MODEM_LORA | USE_MODEM_FSK */
+
   /* Update the State of the FSM*/
   State = RX;
   /* Clear BufferRx*/
@@ -277,16 +272,7 @@ static void OnRxDone(uint8_t *payload, uint16_t size, int16_t rssi, int8_t LoraS
   /* Record Received Signal Strength*/
   RssiValue = rssi;
   /* Record payload content*/
-  APP_LOG(TS_ON, VLEVEL_H, "payload. size=%d \n\r", size);
-  for (int32_t i = 0; i < PAYLOAD_LEN; i++)
-  {
-    APP_LOG(TS_OFF, VLEVEL_H, "%02X", BufferRx[i]);
-    if (i % 16 == 15)
-    {
-      APP_LOG(TS_OFF, VLEVEL_H, "\n\r");
-    }
-  }
-  APP_LOG(TS_OFF, VLEVEL_H, "\n\r");
+  APP_LOG(TS_ON, VLEVEL_L, "Rx: %s\n\r", BufferRx);
   /* Run PingPong process in background*/
   UTIL_SEQ_SetTask((1 << CFG_SEQ_Task_SubGHz_Phy_App_Process), CFG_SEQ_Prio_0);
   /* USER CODE END OnRxDone */
@@ -329,6 +315,7 @@ static void OnRxError(void)
 static void PingPong_Process(void)
 {
   Radio.Sleep();
+  return;
 
   switch (State)
   {
@@ -340,7 +327,7 @@ static void PingPong_Process(void)
         {
           if (strncmp((const char *)BufferRx, PONG, sizeof(PONG) - 1) == 0)
           {
-            UTIL_TIMER_Stop(&timerLed);
+            // UTIL_TIMER_Stop(&timerLed);
             /* switch off green led */
             HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET); /* LED_GREEN */
             /* master toggles red led */
@@ -377,7 +364,7 @@ static void PingPong_Process(void)
         {
           if (strncmp((const char *)BufferRx, PING, sizeof(PING) - 1) == 0)
           {
-            UTIL_TIMER_Stop(&timerLed);
+            // UTIL_TIMER_Stop(&timerLed);
             /* switch off red led */
             HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_RESET); /* LED_RED */
             /* slave toggles green led */
@@ -438,6 +425,12 @@ static void OnledEvent(void *context)
 {
   HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin); /* LED_GREEN */
   HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin); /* LED_RED */
+  
+  Radio.Send(messageBuffer.data(), static_cast<uint8_t>(messageBuffer.size()));
+  for (size_t i = 0; i < messageBuffer.size(); i++)
+  {
+    APP_LOG(TS_ON, VLEVEL_L, "TX[%d]=%d\n\r", i, messageBuffer[i]);
+  }
   UTIL_TIMER_Start(&timerLed);
 }
 
