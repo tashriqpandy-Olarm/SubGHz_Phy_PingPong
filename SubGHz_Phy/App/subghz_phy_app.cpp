@@ -32,6 +32,8 @@
 #include "subghz_phy_version.h"
 #include "ProtocolYMessages.hpp"
 
+static std::vector<uint8_t> messageBuffer;
+
 /* USER CODE END Includes */
 
 /* External variables ---------------------------------------------------------*/
@@ -221,6 +223,16 @@ Radio.SetMaxPayloadLength(MODEM_LORA, MAX_APP_BUFFER_SIZE);
   /*register task to to be run in while(1) after Radio IT*/
   UTIL_SEQ_RegTask((1 << CFG_SEQ_Task_SubGHz_Phy_App_Process), UTIL_SEQ_RFU, PingPong_Process);
   /* USER CODE END SubghzApp_Init_2 */
+
+  ProtocolYMessages message(PROTOCOL_Y::MessageTypes::SYNC_BEACON);
+  int retValue = message.buildMessage();
+  
+
+  if (retValue == static_cast<int>(RCODE::SUCCESS))
+  {
+      message.buildMessage();
+      messageBuffer = message.getMessageBuffer();
+  }
 }
 
 /* USER CODE BEGIN EF */
