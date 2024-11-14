@@ -59,7 +59,7 @@ typedef enum
 /* Configurations */
 /*Timeout*/
 #define RX_TIMEOUT_VALUE              0
-#define TX_TIMEOUT_VALUE              10
+#define TX_TIMEOUT_VALUE              1000
 /* PING string*/
 #define PING "PING"
 /* PONG string*/
@@ -75,7 +75,7 @@ typedef enum
 /* Afc bandwidth in Hz */
 #define FSK_AFC_BANDWIDTH             83333
 /* LED blink Period*/
-#define LED_PERIOD_MS                 5000
+#define LED_PERIOD_MS                 1000
 
 /* USER CODE END PD */
 
