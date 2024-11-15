@@ -17,7 +17,7 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
-#define HUB_DEVICE 0
+#define HUB_DEVICE 1
 /* Includes ------------------------------------------------------------------*/
 #include "platform.h"
 #include "sys_app.h"
@@ -59,7 +59,7 @@ typedef enum
 /* Configurations */
 /*Timeout*/
 #define RX_TIMEOUT_VALUE              10000
-#define TX_TIMEOUT_VALUE              000
+#define TX_TIMEOUT_VALUE              3000
 /* PING string*/
 #define PING "PING"
 /* PONG string*/
@@ -322,6 +322,11 @@ static void PingPong_Process(void)
 {
   Radio.Sleep();
   #if(HUB_DEVICE == 1)
+  if(State == RX_TIMEOUT)
+  {
+    State = TX;
+  }
+  return;
   // Do nothing
   #else
     if(State == RX && RxBufferSize > 0) {
@@ -381,6 +386,7 @@ static void OnledEvent(void *context)
   {
     APP_LOG(TS_ON, VLEVEL_L, "TX[%d]=%d\n\r", i, messageBuffer[i]);
   }
+  UTIL_TIMER_Start(&timerLed);
   return;
   #endif
   HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin); /* LED_GREEN */

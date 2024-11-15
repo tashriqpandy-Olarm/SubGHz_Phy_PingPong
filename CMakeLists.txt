@@ -80,7 +80,7 @@ target_compile_definitions(${CMAKE_PROJECT_NAME} PRIVATE
 
 #     # Add user defined libraries
 # )
-# Link only the ProtocolYMessages target to your project
+# Link only the targets to your project
 target_link_libraries(${CMAKE_PROJECT_NAME} PRIVATE
     LoraInterface
     ProtocolYReturnCodes
