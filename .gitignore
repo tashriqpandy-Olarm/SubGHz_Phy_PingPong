@@ -36,3 +36,10 @@
 
 # Ignore build directory
 build/
+SubGHz_Phy_PingPong/build/
+SubGHz_Phy_PingPong/build.ninja
+SubGHz_Phy_PingPong/compile_commands.json
+_deps
+CMakeFiles
+CMakeCache.txt
+*.DS_Store
